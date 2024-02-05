@@ -9,8 +9,8 @@ import SwiftUI
 
 struct HelloUIView: View {
     var body: some View {
-      Button("test from SwiftUI") {
-        print("test from SwiftUI")
+      Button("SwiftUI button (underneath layer)") {
+        print("SwiftUI button is clicked") // Bug: Don't want this action is trigged when click covered UIKit button
       }
       .foregroundColor(.brown)
       .frame(width: 300, height: 300)
